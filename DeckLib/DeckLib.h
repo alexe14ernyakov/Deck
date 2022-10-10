@@ -21,11 +21,9 @@ namespace Deck {
 		int count;
 		Card cards[N_MAX];
 
-		int generate_suit();
-		int generate_rang();
+		int generate_suit() const;
+		int generate_rang() const;
 		bool repeat_check(int r, int s) const;
-		bool suit_sorted() const;
-		bool rang_sorted() const;
 	public:
 		Deck();
 		Deck(int n);
